@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+<title>my_html - html</title>
+<meta charset="utf-8">
+<style>
+    .deque{
+        font-weight:bold;
+        color:cadetblue;
+    }
+
+    #first{
+        color:green;
+    }
+
+    span{
+        color:blue;
+    }
+</style>
+</head>
+
+<body>
+    <h1><a href="index.html">Stack</a></h1>
+
+    <h2 style="background-color:coral;color:powderblue;">Javascript</h2>
+
+    <h2 style="background-color:coral;color:powderblue;"><a href="https://en.cppreference.com/w/cpp/container/deque" target="_blank" title="std::deque specification">std::deque</a></h2>
+    <p>
+        <span id="first" class="deque">std::deque</span> (double-ended queue) is an indexed sequence <span>container</span> that allows fast insertion and deletion at both its beginning and its end. In addition, insertion and deletion at either end of a <span class="deque">deque</span> never invalidates pointers or references to the rest of the elements.
+    </p>
+    <image src="https://i.stack.imgur.com/dbPA6.jpg" width="100%">
+    <p style="margin-top:45px;">As opposed to std::vector, the elements of a deque are not stored contiguously: typical implementations use a sequence of individually allocated fixed-size arrays, with additional bookkeeping, which means indexed access to deque must perform two pointer dereferences, compared to vector's indexed access which performs only one.</p>
+</body>
+</html>

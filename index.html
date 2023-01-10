@@ -7,6 +7,34 @@
 
 <body>
     <h1><a href="index.html">Stack</a></h1>
+    <input class="night_day" type="button" value="night" onclick="
+    var target = document.querySelector('body');
+    var status = document.querySelectorAll('.night_day');
+    var alist = document.querySelectorAll('a');
+
+    if(this.value === 'night'){
+        target.style.backgroundColor='black';
+        target.style.color='white';
+
+        for (var i = 0; i < alist.length; ++i)
+            alist[i].style.color = 'powderblue';
+
+        for (var i = 0; i < status.length; ++i) {
+            status[i].value = 'day';
+        }
+    }
+    else {
+        target.style.backgroundColor='white';
+        target.style.color='black';
+
+        for (var i = 0; i < alist.length; ++i)
+            alist[i].style.color = 'blue';
+
+        for (var i = 0; i < status.length; ++i) {
+            status[i].value = 'night';
+        }
+    }
+    ">
 <ol>
     <li><a href="1.html">std::vector</a></li>
     <li><a href="2.html">std::list</a></li>
@@ -18,5 +46,32 @@
 <p style="margin-top:45px;"> <!-- stype은 css-->
 The class template acts as a wrapper to the underlying container - only a specific set of functions is provided. The stack pushes and pops the element from the back of the underlying container, known as the top of the stack.
 </p>
+<input class="night_day" type="button" value="night" onclick="
+    var target = document.querySelector('body');
+    var status = document.querySelectorAll('.night_day');
+    var alist = document.querySelectorAll('a');
+    if(this.value === 'night'){
+        target.style.backgroundColor='black';
+        target.style.color='white';
+
+        for (var i = 0; i < alist.length; ++i)
+            alist[i].style.color = 'powderblue';
+
+        for (var i = 0; i < status.length; ++i) {
+            status[i].value = 'day';
+        }
+    }
+    else {
+        target.style.backgroundColor='white';
+        target.style.color='black';
+
+        for (var i = 0; i < alist.length; ++i)
+            alist[i].style.color = 'blue';
+
+        for (var i = 0; i < status.length; ++i) {
+            status[i].value = 'night';
+        }
+    }
+    ">
 </body>
 </html>
