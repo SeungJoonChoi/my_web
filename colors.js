@@ -1,25 +1,21 @@
 var Body = {
     setColor:function (color){
-        document.querySelector('body').style.color = color;
+        $('body').css('color', color);
     },
     setBackgroundColor:function (color){
-        document.querySelector('body').style.backgroundColor = color;
+        $('body').css('backgroundColor', color);
     }
 }
 
 var Links = {
-    setColor:function (color){
-        var alist = document.querySelectorAll('a');
-        for (var i = 0; i < alist.length; ++i)
-            alist[i].style.color = color;
+    setColor:function(color){
+        $('a').css('color', color);
     }
 }
 
 var NightDayButton = {
     setValue:function (input){
-        var status = document.querySelectorAll('.night_day');
-        for (var i = 0; i < status.length; ++i)
-            status[i].value = input;
+        $('.night_day').prop('value', input);
     }
 }
 
