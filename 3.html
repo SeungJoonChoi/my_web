@@ -3,10 +3,14 @@
 <head>
 <title>my_html - html</title>
 <meta charset="utf-8">
+<script src="color.js"></script>
 </head>
 
 <body>
     <h1><a href="index.html">Stack</a></h1>
+    <input class="night_day" type="button" value="night" onclick="
+    nightDayHandler(this);
+    ">
     <ol>
         <li><a href="1.html">std::vector</a></li>
         <li><a href="2.html">std::list</a></li>
@@ -16,5 +20,8 @@
 <p>std::deque (double-ended queue) is an indexed sequence container that allows fast insertion and deletion at both its beginning and its end. In addition, insertion and deletion at either end of a deque never invalidates pointers or references to the rest of the elements.</p>
 <image src="https://i.stack.imgur.com/dbPA6.jpg" width="100%">
 <p style="margin-top:45px;">As opposed to std::vector, the elements of a deque are not stored contiguously: typical implementations use a sequence of individually allocated fixed-size arrays, with additional bookkeeping, which means indexed access to deque must perform two pointer dereferences, compared to vector's indexed access which performs only one.</p>
+<input class="night_day" type="button" value="night" onclick="
+    nightDayHandler(this);
+    ">
 </body>
 </html>

@@ -3,10 +3,14 @@
 <head>
 <title>my_html - html</title>
 <meta charset="utf-8">
+<script src="color.js"></script>
 </head>
 
 <body>
     <h1><a href="index.html">Stack</a></h1>
+    <input class="night_day" type="button" value="night" onclick="
+    nightDayHandler(this);
+    ">
     <ol>
         <li><a href="1.html">std::vector</a></li>
         <li><a href="2.html">std::list</a></li>
@@ -16,5 +20,8 @@
 <p>The elements are stored contiguously, which means that elements can be accessed not only through iterators, but also using offsets to regular pointers to elements. This means that a pointer to an element of a vector may be passed to any function that expects a pointer to an element of an array.</p>
 <image src="https://images.velog.io/images/ounols/post/301d40d7-349c-4a3c-88d2-7b7bba1d97da/image.png" width="100%">
 <p style="margin-top:45px;">The storage of the vector is handled automatically, being expanded as needed. Vectors usually occupy more space than static arrays, because more memory is allocated to handle future growth. This way a vector does not need to reallocate each time an element is inserted, but only when the additional memory is exhausted. The total amount of allocated memory can be queried using capacity() function. Extra memory can be returned to the system via a call to shrink_to_fit(). (since C++11)</p>
+<input class="night_day" type="button" value="night" onclick="
+    nightDayHandler(this);
+    ">
 </body>
 </html>

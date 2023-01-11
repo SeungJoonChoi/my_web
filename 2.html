@@ -3,10 +3,14 @@
 <head>
 <title>my_html - html</title>
 <meta charset="utf-8">
+<script src="color.js"></script>
 </head>
 
 <body>
     <h1><a href="index.html">Stack</a></h1>
+    <input class="night_day" type="button" value="night" onclick="
+    nightDayHandler(this);
+    ">
     <ol>
         <li><a href="1.html">std::vector</a></li>
         <li><a href="2.html">std::list</a></li>
@@ -16,5 +20,8 @@
 <p>std::list is a container that supports constant time insertion and removal of elements from anywhere in the container. Fast random access is not supported. It is usually implemented as a doubly-linked list. Compared to std::forward_list this container provides bidirectional iteration capability while being less space efficient.</p>
 <image src="https://miro.medium.com/max/1182/0*oJDrsP3JSaSqL4GX." width="100%">
 <p style="margin-top:45px;">Adding, removing and moving the elements within the list or across several lists does not invalidate the iterators or references. An iterator is invalidated only when the corresponding element is deleted.</p>
+<input class="night_day" type="button" value="night" onclick="
+    nightDayHandler(this);
+    ">
 </body>
 </html>
